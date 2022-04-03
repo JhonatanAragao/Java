@@ -31,23 +31,12 @@ public class Ex_conversor_de_temperaturas {
                 float temperatureValue = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor da temperatura em °K:\n"));
                 float temperatureCelsius = temperatureValue - 273;
                 float temperatureFahrenheit = (temperatureCelsius * 9) / 5 + 32;
-                System.out.printf("%f°K corresponde à:\n%f°C\n%f°F\n", temperatureValue, temperatureCelsius, temperatureFahrenheit); 
-            } else {
+                System.out.printf("%f°K corresponde à:\n%f°C\n%f°F\n", temperatureValue, temperatureCelsius, temperatureFahrenheit);
+            } 
+             {
                 System.out.print("Encerrando o programa...");
                 break;
             }
-
-            //**Tentativa de usar o método 'Try' sem sucesso!**
-
-            //try {
-            //    int userChoice = Integer.parseInt(JOptionPane.showInputDialog("Digite algo"));
-            //} catch (NumberFormatException userChoice) {
-            //    System.out.println("Digite apenas números!");
-            //} finally {
-             //   
-              //  if (userChoice == 1){
-              //    System.out.println("1");
-               // }
             }
         }
     }
